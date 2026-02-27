@@ -1,0 +1,298 @@
+/* ========== SIDEBAR ========== */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #E9EEF4;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.08);
+    z-index: 100;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'MyriadPro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #222;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+    font-family: 'MyriadPro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.menu a:hover {
+    background: #f0f0f0;
+}
+
+.menu a.active {
+    background: #258132;
+    color: white;
+}
+
+.logout {
+    color: crimson !important;
+}
+
+/* USER BOX */
+.user-box {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    border-top: 1px solid #eee;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main-content {
+    margin-left: 260px; /* ikutin lebar sidebar */
+    padding: 40px;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.summary-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.summary-card {
+    background: linear-gradient(145deg, #ffffff, #f0f3ff);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border: 1px solid #e5e9f5;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.summary-icon {
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+}
+
+.icon-income {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.icon-expense {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.icon-profit {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.summary-text b {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: #374151;
+}
+
+.summary-value {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+.summary-value.green { color: #15803d; }
+.summary-value.red { color: #dc2626; }
+.summary-value.blue { color: #4338ca; }
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.sidebar-header .logo {
+    width: auto;
+    height: 40px;
+    border-radius: 10px; /* Biar sedikit melengkung */
+    object-fit: contain;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.product-card {
+    background: #E9EEF4;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.product-info h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0a7f2e;
+}
+
+button {
+    background: #258132;
+    border: none;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+    margin-bottom: 25px;  /* jarak ke bagian ringkasan */
+}
+
+/* ============================
+   LOGIN PAGE STYLE
+   ============================ */
+
+.login-page {
+    background:#000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-card {
+    backdrop-filter: blur(14px);
+    background: rgba(249, 249, 249, 0.961);
+    border-radius: 18px;
+    padding: 35px 28px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #fff;
+}
+
+.login-logo {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.login-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    color: rgb(31, 27, 27);
+}
+
+/* === LOGIN INPUT === */
+.input-login {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s ease;
+    box-sizing: border-box;
+}
+
+.input-login:focus {
+    border-color: #258132;
+    box-shadow: 0 0 8px rgba(37,129,50,0.25);
+    background: #ffffff;
+}
+
+.input-login::placeholder {
+    color: #9ca3af;
+}
+
+/* Tombol login */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: #258132;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.btn-login:hover {
+    background: #1f6a2a;
+    transform: translateY(-2px);
+}
+
